@@ -13,8 +13,14 @@
 .display-flex{
     display: flex;
 }
+.text-primary{
+    color: #FF900E;
+}
 .text-gray{
     color: #424242;
+}
+.text-light-gray{
+    color: #727272;
 }
 
 .bg-light{
@@ -29,6 +35,14 @@
     border: none;
     border-radius: 5px;
     margin-bottom: 30px;
+}
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main > section{
+    margin-top: 130px;
 }
 
 /* NAV STYLES */
@@ -70,6 +84,25 @@
 }
 .banner-image{
     width: 100%;
+}
+
+/* TEAMS AND FEATURES RELATED STYLE */
+.teams{
+    align-items: center;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.our-features{
+    margin-left: 130px;
+}
+.feature-tittle{
+    font-size: 2.5rem;
+}
+#quick-list{
+    font-weight: 600;
 }
 
 /* Responsive media Query */
