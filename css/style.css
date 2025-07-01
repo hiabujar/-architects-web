@@ -92,6 +92,7 @@ main > section{
 }
 
 /* TEAMS AND FEATURES RELATED STYLE */
+/* TEAMS AND FEATURES RELATED STYLE */
 .teams{
     align-items: center;
 }
@@ -109,6 +110,20 @@ main > section{
     font-weight: 600;
 }
 
+#experience-badge{
+    padding: 40px;
+    font-size: 1.5rem;
+    font-weight: 600px;
+    margin-top: -100px;
+    margin-left: -100px;
+}
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+
+/* Features related style */
 /* Features related style */
 
 .features{
@@ -134,8 +149,11 @@ main > section{
   
 }
 
+.featured-architect img{
+    width: 100%;
+}
 
-
+/* Some Facts Related style */
 /* Some Facts Related style */
 .facts-container{
     display: grid;
@@ -187,14 +205,29 @@ main > section{
 .sponsor-company img {
   filter: grayscale(100%);
 }
+/* Footer style */
+footer{
+    margin-top: 50px;
+    max-width: 1440px;
+    height: 100px;
+    background: #FFF4E7;
+}
+.foot {
+  justify-content: center; /* Horizontal alignment */
+  align-items: center;     /* Vertical alignment */
+  text-align: center;
+  height: 100px;           /* Adjust this as per your layout */
+  background-color: #f8f3e9; /* Match your footer background */
+}
 
 
+/* Responsive media Query */
 /* Responsive media Query */
 
 @media screen and (max-width: 576px) {
     .navbar,
     .nav-links,
-    .teams {
+    .teams, .features {
     flex-direction: column;
 }
 .team-img-container,
@@ -214,11 +247,21 @@ main > section{
     justify-items: center;
     gap: 70px;
 }
+#experience-badge{
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: 400px;
+    margin-left: 50px;
+}
+#experience-year{
+    font-size: 2.5rem;
+}
+
 }
 
 /* MEDIUM SIZE DEVICE */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .teams{
+    .teams, .features {
         flex-direction: column;
     }    
     .our-features{
@@ -232,6 +275,12 @@ main > section{
         gap: 50px;
         justify-items: center;
     }
+    #experience-badge{
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: 400px;
+    margin-left: 50px;
+}
 }
 
 
